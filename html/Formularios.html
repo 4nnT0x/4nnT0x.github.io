@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario</title>
+<link href="../css/style_page_1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+  <h1>Formularios&nbsp;</h1>
+</header>
+<nav>
+<ul id="menu">
+    <li><a href="formatos_de_texto.html" target="_blank">Formatos de texto</a></li>
+	<li><a href="listas.html" target="_blank">Listas</a></li>
+	<li><a href="Enlaces.html" target="_blank">Enlaces</a></li>
+	<li><a href="Tablas.html" target="_blank">Tablas</a></li>
+	<li><a href="Imagenes.html" target="_blank">Imagenes</a></li>
+	<li><a href="Audios.html" target="_blank">Audios</a></li>
+	<li><a href="Videos.html" target="_blank">Videos</a></li>
+	<li><a href="Formularios.html" target="_blank">Formularios</a></li>
+  </ul>	
+</nav>
+<main>
+  <section>
+    <h2>Formulario </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat, orci ut maximus vehicula, nunc nisi rutrum mi, ac faucibus justo nisi non diam. Nulla aliquam magna lectus. Duis dignissim nec dui sit amet tincidunt. Suspendisse sollicitudin nibh sed lectus sodales posuere. Aliquam erat volutpat. Suspendisse suscipit enim vitae gravida pulvinar. Nunc eget ipsum nec eros suscipit consequat.</p>
+    <form id="form1" name="form1" method="get">
+      <label for="textfield">Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+		<label for="textfield">Apellido:</label> 
+		<input type="text" name="apellido" id="apellido">
+      <input name="boton1" type="submit" id="boton1" formmethod="GET" value="Enviar">
+    </form>
+  </section>
+  <section>
+    <h2>Formulario usando select, checkbox y radio button</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat, orci ut maximus vehicula, nunc nisi rutrum mi, ac faucibus justo nisi non diam. Nulla aliquam magna lectus. Duis dignissim nec dui sit amet tincidunt. Suspendisse sollicitudin nibh sed lectus sodales posuere. Aliquam erat volutpat. Suspendisse suscipit enim vitae gravida pulvinar. Nunc eget ipsum nec eros suscipit consequat.</p>
+    <form id="form2" name="form2" method="post">
+      <label for="select">País:</label>
+      <select name="select" id="select">
+        <option value="MX">México</option>
+        <option value="US">Estados Unidos</option>
+        <option value="ES">España</option>
+        <option value="ARG">Argentina</option>
+        <option value="COL">Colombia</option>
+        <option value="IT">Italia</option>
+      </select>
+	<br><br>
+		<label>
+          <input type="radio" name="Genero" value="Hombre" id="Genero_0">
+          Hombre</label>
+        <br>
+        <label>
+          <input type="radio" name="Genero" value="Mujer" id="Genero_1">
+          Mujer</label>
+		<br><br>
+		<table width="200">
+      <tr>
+        <td><label>¿Cuál será tu residencia durante tu estancia?</label>
+			<br>
+          <label>
+          <input type="checkbox" name="Residencia temporal" value="Hotel" id="Residenciatemporal_0">
+          Hotel</label></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input type="checkbox" name="Residencia temporal" value="Particular" id="Residenciatemporal_1">
+          Domicilio de amigos/Familia</label></td>
+      </tr>
+      <tr>
+        <td><label>
+          <input type="checkbox" name="Residencia temporal" value="Airbnb" id="Residenciatemporal_2">
+          Airbnb</label></td>
+      </tr>
+    </table>
+        <br><br>
+		  <input name="submit" type="submit" id="boton1" formmethod="GET" value="Enviar">
+    </form>
+  </section>
+  <section>
+    <h2>Formulario de contacto</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat, orci ut maximus vehicula, nunc nisi rutrum mi, ac faucibus justo nisi non diam. Nulla aliquam magna lectus. Duis dignissim nec dui sit amet tincidunt. Suspendisse sollicitudin nibh sed lectus sodales posuere. Aliquam erat volutpat. Suspendisse suscipit enim vitae gravida pulvinar. Nunc eget ipsum nec eros suscipit consequat.</p>
+    <form action="Procesamiento.html" method="post" name="form3" id="form3">
+      <label for="textfield">Nombre:</label>
+      <input name="textfield" type="text" required="required" id="nombre">
+      <label for="email">Email:</label>
+      <input name="email" type="email" required="required" id="email">
+      <label for="textarea">Comentario:</label>
+      <textarea name="textarea" rows="6" maxlength="150" id="comentario" placeholder="Escribe tu mensaje"></textarea>
+      <input name="submit" type="submit" id="boton1" formmethod="GET" value="Enviar">
+    </form>
+</section>
+  <section>
+    <h2>Formulario inicio de sesión</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat, orci ut maximus vehicula, nunc nisi rutrum mi, ac faucibus justo nisi non diam. Nulla aliquam magna lectus. Duis dignissim nec dui sit amet tincidunt. Suspendisse sollicitudin nibh sed lectus sodales posuere. Aliquam erat volutpat. Suspendisse suscipit enim vitae gravida pulvinar. Nunc eget ipsum nec eros suscipit consequat.</p><br>
+    <form id="form4" name="form4" method="post">
+      <label for="textfield">Usuario:</label>
+      <input type="text" name="textfield" id="usuario"><br>
+	<label for:"pwd">Contraseña:</label><br>
+	<input type="contraseña" id="pwd">
+	<input name="Iniciar sesión" type="button" id="boton1" form="form4" value="Iniciar sesión">
+    </form>
+  </section>
+	<section>
+	<h2>Formulario envío de archivo</h2>
+	<p>Nulla aliquam magna lectus. Duis dignissim nec dui sit amet tincidunt. Suspendisse sollicitudin nibh sed lectus sodales posuere. Aliquam erat volutpat.</p><br>
+	<form action="Procesamiento.html" method="post" name="form5" id="form5">
+      <label for="select">Servicio:</label>
+      <select name="select" id="select">
+        <option value="IL">Ilustración</option>
+        <option value="FT">Fotografía</option>
+        <option value="ED">Editorial</option>
+        <option value="MC">Marca</option>
+        <option value="3D">3D</option>
+      </select>
+	<br><br>
+      <label for="nombre">Nombre:</label><br>
+	<input type="text" id="nombre" name="nombre"><br>
+	<label for="email">Email:</label>
+      <input name="email" type="email" required="required" id="email"><br><br>
+      <label for="textarea">Descripción:</label>
+      <textarea name="textarea" rows="6" maxlength="150" id="comentario" placeholder="Describe el servicio que necesites..."></textarea><br>
+	 <label for="archivo">Archivo:</label>
+  <input type="file" id="archivo" name="archivo"><br><br>
+  <label for="month">Si el servicio que requiere es urgente, por favor indicar la fecha estimada en que la necesita y nos comunicaremos con usted pronto:</label><br>
+  <input type="month" name="month" id="month">
+  <label for="semana"> Día del mes:</label>
+	<input type="semana" id="semana" name="semana"><br><br>
+	<label for="vol">Unidades que necesita (entre 1 y 100):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50"><br>
+<input name="submit" type="submit" id="boton1" formmethod="GET" value="Enviar"><br><br>
+    </form>
+	</section>
+</main>
+<footer>
+  <h6>Elaborado por Ana Yukari Toxtega Muñoz</h6>
+</footer>
+</body>
+</html>

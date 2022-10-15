@@ -1,0 +1,215 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Listas en HTML</title>
+<style type="text/css">
+body header {
+    width: 1200px;
+    height: 400px;
+    background-color: #215F43;
+    padding-top: 200px;
+}
+body h1 {
+    width: 800px;
+    height: 125px;
+    color: #583132;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 100px;
+    margin-top: 60px;
+}
+body h2 {
+    background-color: #79CCE2;
+    margin-right: auto;
+    margin-left: auto;
+}
+#lista_1 li {
+    list-style-type: square;
+}
+#menu li {
+    list-style-type: none;
+    width: 110px;
+    padding-top: 8px;
+    display: inline-block;
+    text-align: center;
+    background-color: #B1F4F7;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 2px solid #EBB8FF;
+    font-weight: bold;
+}
+section ul li, section ol {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+body p {
+    background-color: #79CCE2;
+}
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#menu li a:link, #menu li a:visited {
+    text-shadow: 0 0px 0;
+    color: #0F359C;
+}
+#menu li a:hover {
+    color: #B51672;
+    text-shadow: 5px 0px 12px #168D68;
+}
+body header, body nav, body main, body footer {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #4FB8A1;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 30px 0;
+}
+body nav {
+    height: 80px;
+    background-color: #97688C;
+}
+body main section {
+    width: 800px;
+    height: auto;
+    background-color: #79CCE2;
+    text-align: left;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+section ul li {
+    list-style-type: disc;
+}
+.lista_2 li {
+    list-style-image: url(../medios/Iconos/rosa.png);
+}
+body footer h6 {
+    height: 150px;
+    text-align: center;
+    margin:0 auto;
+    padding-top: 35px;
+    font-size: medium;
+    /* [disabled]background-color: #1A391D; */
+    color: #FCC2C3;
+    width: auto;
+    margin-bottom: auto;
+}
+body footer {
+    background-color: #1A391D;
+}
+#menu {
+    margin-left: 125px;
+    margin-right: 125px;
+    border-style: none;
+    border-width: 0px;
+    width: 1000px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+</style>
+</head>
+
+<body>
+	<header>
+	<h1>Listas en HTML</h1>
+	</header>
+<nav>
+  <ul id="menu">
+    <li><a href="formatos_de_texto.html" target="_blank">Formatos texto</a></li>
+    <li><a href="listas.html" target="_blank">Listas</a></li>
+    <li><a href="Enlaces.html" target="_blank">Enlaces</a></li>
+    <li><a href="Tablas.html" target="_blank">Tablas</a></li>
+	<li><a href="Imagenes.html" target="_blank">Imagenes</a></li>
+	<li><a href="Audios.html" target="_blank">Audios</a></li>
+	<li><a href="Videos.html" target="_blank">Videos</a></li>
+	<li><a href="Formularios.html" target="_blank">Formularios</a></li>
+  </ul>
+</nav>
+<main>
+<section>
+<h2>Lista desordenada</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel pulvinar quam. Aliquam pharetra leo eget porta molestie. Integer tincidunt et mauris eleifend congue. Integer non viverra turpis, a malesuada ipsum. Morbi molestie turpis nec nunc facilisis sagittis. Integer ut eleifend mauris. Cras varius hendrerit eros nec facilisis. Phasellus sed arcu ultrices velit blandit dapibus non sit amet arcu. Morbi sodales commodo nunc vel feugiat. Sed maximus nunc sed libero vulputate interdum vitae id elit. Sed luctus sapien eget fringilla mollis. Maecenas tempor rutrum tristique. Curabitur pulvinar gravida dui, ut sollicitudin risus ullamcorper vel. Etiam a rutrum dui, sit amet congue magna. Morbi feugiat a lectus eu volutpat. Donec semper lectus eu feugiat vestibulum. Aenean at purus sed risus gravida ornare. Ut iaculis blandit gravida. Ut nisl elit, suscipit non pellentesque pulvinar, elementum ut nisl. Praesent ac orci scelerisque enim ultricies tincidunt. Aenean suscipit, tellus et dictum semper, mauris felis.</p>
+	<ul class="lista_2">
+	<li>Rosas</li>
+	<li>Margaritas</li>
+	<li>Hortencias</li>
+	<li>Violetas</li>
+	<li>Claveles&nbsp;</li>
+    </ul>
+</section>
+<section>
+<h2>Lista ordenada&nbsp;</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum urna eget ligula interdum, blandit facilisis tellus tincidunt. Maecenas vehicula velit eget libero porta gravida. Nam eget risus in neque tempus dictum eget et quam. Curabitur ac ultricies sapien. Nulla vitae libero lectus. Curabitur pulvinar eleifend sapien feugiat mattis. Nunc egestas consequat felis, quis imperdiet tellus ornare at. Donec vulputate nibh quis enim ultricies faucibus. Aenean eget dapibus libero. Vestibulum blandit egestas turpis id aliquam. Nunc et justo elit. Mauris mollis nibh arcu, eu venenatis risus commodo non. Integer bibendum est nisi, at tempor tellus lacinia vitae. Proin blandit rhoncus.</p>
+<ol>
+  <li>Brenda García</li>
+  <li>Fernan Lara</li>
+  <li>Ricardo Peréz</li>
+  <li>Alejandra González</li>
+  <li>Elias Báez&nbsp;</li>
+</ol>
+</section>
+<section>
+<h2>Lista Mixta</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin convallis, leo id consectetur porttitor, tellus lacus tincidunt velit, a sollicitudin dolor ante ac turpis. Proin sem enim, mattis at mauris eget, viverra vehicula libero. Fusce ullamcorper feugiat nunc a dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas iaculis viverra ante, eget ornare dui lobortis quis. Cras vel feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin posuere pellentesque lectus eget consequat. In a suscipit arcu. Integer cursus eu libero nec condimentum. Vivamus nec euismod ante, non suscipit lectus. Duis dictum lorem faucibus, dapibus dui vel, placerat est. Ut vitae est nulla. Nulla at leo non quam bibendum vestibulum sit amet id risus. Nullam ultrices tristique ex eu sollicitudin. Donec eleifend arcu velit, sed vulputate velit iaculis non. In congue ex eget sapien semper euismod. In eleifend, erat sit amet porta tempor, eros quam viverra sapien, nec pellentesque diam nulla sed nibh. Nunc cursus augue ut molestie faucibus. Aliquam quis nibh nec lectus.&nbsp;</p>
+	<ol>
+	<li>Estados Unidos</li>
+	<li>España</li>
+	<li>México</li>
+		<ul>
+			<li>Puebla</li>
+			<li>Colima</li>
+			<li>Veracruz</li>
+			<li>Monterrey</li>
+			<li>Aguascalientes</li>
+		</ul>
+	<li>Brasil</li>
+	<li>Italia</li>
+	</ol>
+</section>
+<section>
+<h2>Lista modificada con una regla de identificador</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id lacus scelerisque, ultrices felis et, commodo magna. Sed id vehicula eros. Fusce felis ligula, efficitur sit amet tristique nec, molestie quis massa. Aliquam dapibus quis turpis sed molestie. Aenean consectetur venenatis orci, a elementum urna congue id. Proin eget dignissim neque. Morbi pharetra, massa vel malesuada semper, arcu nisl ultrices eros, sit amet laoreet purus lacus et orci. Maecenas auctor faucibus mattis. Curabitur laoreet sollicitudin elit sed elementum. Curabitur egestas ligula ac sagittis feugiat. Curabitur euismod nulla eget pulvinar semper. Pellentesque varius eros congue ligula bibendum, consectetur tempor risus lobortis. Praesent tempus varius purus eget efficitur. Mauris sed ligula at nibh tempor viverra. In congue lectus ut lorem tincidunt tempus. Aenean cursus, erat ac fringilla sagittis, nisi arcu posuere ex, eu hendrerit lorem augue eget ipsum. Donec ut justo viverra, feugiat urna id, congue mauris. Mauris ultricies turpis odio, sed venenatis lacus venenatis eget. Vivamus ultricies sollicitudin dictum. Ut commodo elit at pretium bibendum. Maecenas porta tortor sit amet neque euismod lacinia. Nam dignissim nunc sed egestas tristique. Aliquam maximus mi velit, eget pellentesque lectus ultricies quis. Nullam a egestas.&nbsp;</p>
+<ul id="lista_1">
+  <li>Seat</li>
+  <li>VW</li>
+  <li>Mazda</li>
+  <li>Ford</li>
+  <li>Audi</li>
+  <li>Renault</li>
+  <li>Kia&nbsp;</li>
+</ul>
+</section>
+<section>
+  <h2>Lista desordenada</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel pulvinar quam. Aliquam pharetra leo eget porta molestie. Integer tincidunt et mauris eleifend congue. Integer non viverra turpis, a malesuada ipsum. Morbi molestie turpis nec nunc facilisis sagittis. Integer ut eleifend mauris. Cras varius hendrerit eros nec facilisis. Phasellus sed arcu ultrices velit blandit dapibus non sit amet arcu. Morbi sodales commodo nunc vel feugiat. Sed maximus nunc sed libero vulputate interdum vitae id elit. Sed luctus sapien eget fringilla mollis. Maecenas tempor rutrum tristique. Curabitur pulvinar gravida dui, ut sollicitudin risus ullamcorper vel. Etiam a rutrum dui, sit amet congue magna. Morbi feugiat a lectus eu volutpat. Donec semper lectus eu feugiat vestibulum. Aenean at purus sed risus gravida ornare. Ut iaculis blandit gravida. Ut nisl elit, suscipit non pellentesque pulvinar, elementum ut nisl. Praesent ac orci scelerisque enim ultricies tincidunt. Aenean suscipit, tellus et dictum semper, mauris felis.</p>
+  <ul class="lista_2">
+    <li>Rosas</li>
+    <li>Margaritas</li>
+    <li>Hortencias</li>
+    <li>Violetas</li>
+    <li>Claveles&nbsp;</li>
+  </ul>
+</section>
+</main>
+<footer>
+  <h6 style="margin-left: 0px; margin-top: 0px;">Elaborado por Ana Yukari Toxtega Muñoz</h6>
+</footer>
+</body>
+</html>
